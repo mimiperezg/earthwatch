@@ -68,6 +68,7 @@ export default function StationsPage({ user }) {
           <Link to="/login">Log in</Link> to add your own stations
         </p>
       )}
+      {user && <Link to="/stations/new">+ Add station</Link>}
       <div className="station-filters">
         <label htmlFor="station-search">City</label>
         <input
